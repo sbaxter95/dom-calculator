@@ -65,9 +65,9 @@ equalsbtn.addEventListener('click', function(event){
 		number = (parseInt(number) + parseInt(newNumber)).toString();
 	} else if (operator === "-") {
 		number = (parseInt(number) - parseInt(newNumber)).toString();
-	} else if (operator === '*') {
+	} else if (operator === 'x') {
 		number = (parseInt(number) * parseInt(newNumber)).toString();
-	} else {
+	} else if (operator === '/') {
 		number = (parseInt(number) / parseInt(newNumber)).toString();
 	}
 	console.log(number);
