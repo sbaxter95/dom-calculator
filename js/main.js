@@ -59,13 +59,13 @@ equalsbtn.addEventListener('click', function(event){
 	console.log('equals');
 	//Check what operator was pressed
 	if (operator === "+") {
-		number = parseInt(number) + parseInt(newNumber);
+		number = (parseInt(number) + parseInt(newNumber)).toString();
 	} else if (operator === "-") {
-		number = parseInt(number) - parseInt(newNumber);
+		number = (parseInt(number) - parseInt(newNumber)).toString();
 	} else if (operator === '*') {
-		number = parseInt(number) * parseInt(newNumber);
+		number = (parseInt(number) * parseInt(newNumber)).toString();
 	} else {
-		number = parseInt(number) / parseInt(newNumber);
+		number = (parseInt(number) / parseInt(newNumber)).toString();
 	}
 	console.log(number);
 });
