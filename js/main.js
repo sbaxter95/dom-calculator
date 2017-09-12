@@ -58,6 +58,9 @@ var equalsbtn = document.querySelector('.eq');
 equalsbtn.addEventListener('click', function(event){
 	console.log('equals');
 	//Check what operator was pressed
+	//Convert number variables to integers
+	//Perform the calculation
+	//Convert answer to string to be outputted
 	if (operator === "+") {
 		number = (parseInt(number) + parseInt(newNumber)).toString();
 	} else if (operator === "-") {
@@ -68,13 +71,8 @@ equalsbtn.addEventListener('click', function(event){
 		number = (parseInt(number) / parseInt(newNumber)).toString();
 	}
 	console.log(number);
+	display[0].value = number;
+	number = "";
+	newNumber = "";
 });
-
-
-
-//Convert number variables to strings
-
-//Perform the calculation
-
-//Convert answer to string to be outputted
 });
