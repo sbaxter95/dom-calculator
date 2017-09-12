@@ -35,15 +35,22 @@ for (var i = 0; i < opButtons.length; i++) {
 	});
 }
 
-
-
 //display shows 0
+display.value = '0';
 
 //Add click listener for clear button
+var clearbtn = document.querySelector('.clear');
+clearbtn.addEventListener('click', function(event){
+		console.log('clear');
+		//number variable cleared to an empty string
+		number = '';
 
-//number variable cleared to an empty string
+		//newnumber cleared to an empty string
+		newNumber = '';
 
-//newnumber cleared to an empty string
+		//display set to 0
+		display.value = '0';
+	});
 
-//display set to 0
+
 });
