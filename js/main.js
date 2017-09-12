@@ -54,6 +54,10 @@ clearbtn.addEventListener('click', function(event){
 	});
 
 //Add click listener for equals button
+var equalsbtn = document.querySelector('.eq');
+equalsbtn.addEventListener('click', function(event){
+	console.log('equals');
+});
 
 //Check what operator was pressed
 
