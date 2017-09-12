@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event){
 //Setting up variables
-var display = document.querySelector('.display').value = '0';
+var display = document.getElementsByClassName('display');
+display[0].value = '0';
 
 var number = '';
 var newNumber = '';
@@ -15,7 +16,7 @@ for (var i = 0; i < numButtons.length; i++) {
 		number = this.value;
 		console.log(number);
 		//display text equals number
-		display.value = number;
+		display[0].value = number;
 	});
 }
 
@@ -31,7 +32,7 @@ for (var i = 0; i < opButtons.length; i++) {
 		newNumber = number;
 		number = '';
 		//display text equals number
-		display.value = operator;
+		display[0].value = operator;
 	});
 }
 
@@ -49,7 +50,7 @@ clearbtn.addEventListener('click', function(event){
 		newNumber = '';
 
 		//display set to 0
-		display.value = '0';
+		display[0].value = '0';
 	});
 
 
