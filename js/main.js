@@ -53,5 +53,13 @@ clearbtn.addEventListener('click', function(event){
 		display[0].value = '0';
 	});
 
+//Add click listener for equals button
 
+//Check what operator was pressed
+
+//Convert number variables to strings
+
+//Perform the calculation
+
+//Convert answer to string to be outputted
 });
