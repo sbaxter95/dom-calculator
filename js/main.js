@@ -57,9 +57,20 @@ clearbtn.addEventListener('click', function(event){
 var equalsbtn = document.querySelector('.eq');
 equalsbtn.addEventListener('click', function(event){
 	console.log('equals');
+	//Check what operator was pressed
+	if (operator === "+") {
+		number = parseInt(number) + parseInt(newNumber);
+	} else if (operator === "-") {
+		number = parseInt(number) - parseInt(newNumber);
+	} else if (operator === '*') {
+		number = parseInt(number) * parseInt(newNumber);
+	} else {
+		number = parseInt(number) / parseInt(newNumber);
+	}
+	console.log(number);
 });
 
-//Check what operator was pressed
+
 
 //Convert number variables to strings
 
