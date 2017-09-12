@@ -15,13 +15,27 @@ for (var i = 0; i < numButtons.length; i++) {
 		number = this.value;
 		console.log(number);
 		//display text equals number
-		display.textContent = number;
+		display.value = number;
 	});
 }
 
 //Add click events to operator buttons
+var opButtons = document.querySelectorAll('.operator');
+for (var i = 0; i < opButtons.length; i++) {
+	opButtons[i].addEventListener('click', function(event){
+		console.log('clicked');
+		//operator variable becomes equal to the value of the button clicked
+		operator = this.value;
+		console.log(operator);
+		//When any operator button is clicked, newNumber becomes equal to the value of number, whilst number is cleared 
+		newNumber = number;
+		number = '';
+		//display text equals number
+		display.value = operator;
+	});
+}
 
-//When any operator button is clicked, newNumber becomes equal to the value of number, whilst number is cleared 
+
 
 //display shows 0
 
