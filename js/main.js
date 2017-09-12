@@ -11,14 +11,13 @@ var numButtons = document.querySelectorAll('.number');
 for (var i = 0; i < numButtons.length; i++) {
 	numButtons[i].addEventListener('click', function(event){
 		console.log('clicked');
+		//number variable becomes equal to the value of the button clicked
 		number = this.value;
 		console.log(number);
+		//display text equals number
+		display.textContent = number;
 	});
 }
-
-//number variable becomes equal to the value of the button clicked
-
-//display text equals number
 
 //Add click events to operator buttons
 
