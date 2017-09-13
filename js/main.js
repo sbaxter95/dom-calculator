@@ -59,7 +59,7 @@ var equalsbtn = document.querySelector('.eq');
 equalsbtn.addEventListener('click', function(event){
 	console.log('equals');
 	//Check what operator was pressed
-	//Convert number variables to integers
+	//Convert number variables to floats
 	//Perform the calculation
 	//Convert answer to string to be outputted
 	if (operator === "+") {
