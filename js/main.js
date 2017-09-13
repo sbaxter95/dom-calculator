@@ -63,13 +63,13 @@ equalsbtn.addEventListener('click', function(event){
 	//Perform the calculation
 	//Convert answer to string to be outputted
 	if (operator === "+") {
-		total = (parseInt(number) + parseInt(newNumber)).toString();
+		total = (parseFloat(number) + parseFloat(newNumber)).toString();
 	} else if (operator === "-") {
-		total = (parseInt(newNumber) - parseInt(number)).toString();
+		total = (parseFloat(newNumber) - parseFloat(number)).toString();
 	} else if (operator === 'x') {
-		total = (parseInt(number) * parseInt(newNumber)).toString();
+		total = (parseFloat(number) * parseFloat(newNumber)).toString();
 	} else if (operator === '/') {
-		total = (parseInt(newNumber) / parseInt(number)).toString();
+		total = (parseFloat(newNumber) / parseFloat(number)).toString();
 	}
 	console.log(number);
 	display[0].value = total;
