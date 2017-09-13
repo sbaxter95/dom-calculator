@@ -6,6 +6,7 @@ display[0].value = '0';
 var number = '';
 var newNumber = '';
 var operator = '';
+var total = 0;
 
 //Add click events to buttons
 var numButtons = document.querySelectorAll('.number');
@@ -62,16 +63,16 @@ equalsbtn.addEventListener('click', function(event){
 	//Perform the calculation
 	//Convert answer to string to be outputted
 	if (operator === "+") {
-		number = (parseInt(number) + parseInt(newNumber)).toString();
+		total = (parseInt(number) + parseInt(newNumber)).toString();
 	} else if (operator === "-") {
-		number = (parseInt(number) - parseInt(newNumber)).toString();
+		total = (parseInt(newNumber) - parseInt(number)).toString();
 	} else if (operator === 'x') {
-		number = (parseInt(number) * parseInt(newNumber)).toString();
+		total = (parseInt(number) * parseInt(newNumber)).toString();
 	} else if (operator === '/') {
-		number = (parseInt(number) / parseInt(newNumber)).toString();
+		total = (parseInt(newNumber) / parseInt(number)).toString();
 	}
 	console.log(number);
-	display[0].value = number;
+	display[0].value = total;
 	number = "";
 	newNumber = "";
 });
